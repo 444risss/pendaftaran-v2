@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Form Registrasi</header>
+      <form action="#" class="form">
+        <!-- Nama Lengkap & Jenis Kelamin -->
+        <div class="column">
+          <div class="input-box">
+            <label>Nama Lengkap <span style="color:red">*</span></label>
+            <input type="text" placeholder="ISI NAMA LENGKAP ANDA" required />
+          </div>
+          <div class="input-box">
+            <label>Jenis Kelamin <span style="color:red">*</span></label>
+            <div class="gender-box">
+              <div class="gender-option">
+                <div class="gender">
+                  <input type="radio" id="laki" name="gender" required />
+                  <label for="laki">Laki-laki</label>
+                </div>
+                <div class="gender">
+                  <input type="radio" id="perempuan" name="gender" />
+                  <label for="perempuan">Perempuan</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--   No HP & Email -->
+        <div class="column">
+          <div class="input-box">
+            <label>No. HP <span style="color:red">*</span></label>
+            <input type="text" placeholder="0812xxxxxxxx" required />
+          </div>
+          <div class="input-box">
+            <label>Alamat Email <span style="color:red">*</span></label>
+            <input type="email" placeholder="email@domain.com" required />
+          </div>
+        </div>
+        <!-- Baris 3: Tanggal Lahir & Tempat Lahir -->
+        <div class="column">
+          <div class="input-box">
+            <label>Tanggal Lahir <span style="color:red">*</span></label>
+            <input type="text" placeholder="dd-mm-yyyy" required />
+          </div>
+          <div class="input-box">
+            <label>Tempat Lahir <span style="color:red">*</span></label>
+            <input type="text" placeholder="ISI TEMPAT LAHIR ANDA" required />
+          </div>
+        </div>
+        <!-- Baris 4: NIK/KTP & Kewarganegaraan -->
+        <div class="column">
+          <div class="input-box">
+            <label>NIK / No. KTP <span style="color:red">*</span></label>
+            <input type="text" placeholder="Isi No. KTP Anda" required />
+          </div>
+          <div class="input-box">
+            <label>Kewarganegaraan <span style="color:red">*</span></label>
+            <div class="select-box">
+              <select required>
+                <option value="">Pilih Kewarganegaraan</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="WNA">WNA</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Section Asal Sekolah -->
+        <div style="margin:30px 0 10px 0; font-weight:600; font-size:1.1em; border-bottom:1px solid #eee; padding-bottom:4px;">Asal Sekolah </div>
+        <!-- Baris 5: Provinsi & Kota -->
+        <div class="column">
+          <div class="input-box">
+            <label>Provinsi <span style="color:red">*</span></label>
+            <div class="select-box">
+              <select required>
+                <option value="">-- Pilih Provinsi --</option>
+                <option value="Jawa Barat">Jawa Barat</option>
+                <option value="Jawa Tengah">Jawa Tengah</option>
+                <option value="Jawa Timur">Jawa Timur</option>
+                <option value="DKI Jakarta">DKI Jakarta</option>
+                <option value="Banten">Banten</option>
+                <!-- Tambah provinsi lain sesuai kebutuhan -->
+              </select>
+            </div>
+          </div>
+          <div class="input-box">
+            <label>Kota <span style="color:red">*</span></label>
+            <div class="select-box">
+              <select required>
+                <option value="">-- Pilih Kota --</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Semarang">Semarang</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Jakarta">Jakarta</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Baris 6: Jenjang Pendidikan & Jenis Perguruan Tinggi -->
+        <div class="column">
+          <div class="input-box">
+            <label>Jenjang Pendidikan <span style="color:red">*</span></label>
+            <div class="select-box">
+              <select required>
+                <option value="">-- Pilih Jenjang Pendidikan --</option>
+                <option value="SMA">SMA</option>
+                <option value="SMK">SMK</option>
+                <option value="MA">MA</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-box">
+            <label>Jururusan <span style="color:red">*</span></label>
+            <div class="select-box">
+              <select required>
+                <option value="">-- Pilih Jenis Jururusan --</option>
+                <option value="IPA">IPA</option>
+                <option value="IPS">IPS</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Baris 7: Nama Sekolah & Tahun Lulus -->
+        <div class="column">
+          <div class="input-box">
+            <label>Nama Sekolah <span style="color:red">*</span></label>
+            <input type="text" placeholder="Isi Nama Sekolah Anda" required />
+          </div>
+          <div class="input-box">
+            <label>Tahun Lulus <span style="color:red">*</span></label>
+            <input type="text" placeholder="Isi Tahun Lulus Anda" required />
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
